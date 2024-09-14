@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 //define the mongoDB connection URL
-const mongoURL = 'mongodb://locolhost:27017/mydatabase'
+//const mongoURL = process.env.MONGODB_URL_LOCAL;
+const mongoURL = process.env.MONGODB_URL;
 //upper part lo mydatabse anedi manam replace kuda cheyocchu
 
-//set up mongoDB connection
+//set up mongoDB connectionn
 // mongoose.connect(mongoURL, {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true
